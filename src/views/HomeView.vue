@@ -3,8 +3,8 @@
     <div class="advice">
       <h1>ADVICE {{this.id}}</h1>
       <p>"{{this.info}}"</p>
-      <img src="/src/assets/images/pattern-divider-desktop.svg" alt="" id="divider">
-      <button @click="getAdvice"><img src="/src/assets/images/icon-dice.svg" alt="" id="img"></button>
+      <img src="/src/assets/images/pattern-divider-desktop.svg" alt="line image" id="divider">
+      <button @click="getAdvice"><img src="/src/assets/images/icon-dice.svg" alt="dice image" id="img"></button>
     </div>
   </main>
 </template>
