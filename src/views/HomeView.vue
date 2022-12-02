@@ -3,8 +3,8 @@
     <div class="advice">
       <h1>ADVICE {{this.id}}</h1>
       <p>"{{this.info}}"</p>
-      <img src="/src/assets/images/pattern-divider-desktop.svg" alt="line image" id="divider">
-      <button @click="getAdvice"><img src="/src/assets/images/icon-dice.svg" alt="dice image" id="img"></button>
+      <img src="/src/assets/images/pattern-divider-desktop.svg" alt="" id="divider">
+      <button @click="getAdvice"><img src="/src/assets/images/icon-dice.svg" alt="" id="img"></button>
     </div>
   </main>
 </template>
@@ -121,24 +121,45 @@
   }
 
   @media only screen and (max-width: 480px) {
-    .advice p {
-      font-size: 20px;
-      left: clamp(7vw,8vw, 10vw);
+    main {
+      height: 100vh;
     }
 
-    button {
-      position: relative;
+    .advice {
+      height: 250px;
+      left: 25vw;
+    }
+
+    .advice p {
+      margin-top: 20px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 20px;
+    }
+
+    button {  
       z-index: 1;
       padding: 5px 5px 5px 5px;
-      left: 25vw;
       top: 1rem;
     } 
+    
+    #divider {
+      width: 40vw;
+      margin-bottom: 0;
+      right: 10px;
+    }
   
   }
 
   @media only screen and (min-width: 480px) and (max-width: 1024px) {
     .advice {
-      left: clamp(15vw, 20vw, 30vw);
+      left: 25vw;
+    }
+
+    #divider {
+      width: 40vw;
+      margin-bottom: 0;
+      right: 10px;
     }
   }
 
